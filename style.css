@@ -1,0 +1,27 @@
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #f5f7ff;
+  background: #0b1020;
+  line-height: 1.6;
+}
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; background: radial-gradient(circle at 50% 0%, #24356d 0, #0b1020 48%); }
+.nav { max-width: 1100px; margin: auto; padding: 28px 24px; display:flex; justify-content:space-between; align-items:center; }
+.logo { color:white; text-decoration:none; font-weight:800; letter-spacing:.08em; }
+.logo span { color:#8fa8ff; }
+.github { color:#cbd5ff; text-decoration:none; font-size:.9rem; }
+.hero { max-width:900px; margin:70px auto 90px; padding:0 24px; text-align:center; }
+.badge { display:inline-block; padding:7px 12px; border:1px solid #4f629e; border-radius:999px; color:#b9c7ff; font-size:.8rem; }
+h1 { margin:22px 0 18px; font-size:clamp(2.7rem, 8vw, 5.8rem); line-height:1.02; letter-spacing:-.06em; }
+h1 span { color:#9db1ff; }
+.hero p { max-width:600px; margin:0 auto 28px; color:#aeb8d6; font-size:1.05rem; }
+button { border:0; border-radius:12px; padding:13px 20px; font-weight:700; cursor:pointer; background:#fff; color:#11172a; }
+button:hover { transform:translateY(-1px); }
+.message { min-height:25px; margin-top:16px !important; color:#9db1ff !important; }
+.cards { max-width:1100px; margin:auto; padding:0 24px 80px; display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+.cards article { padding:25px; border:1px solid #28365f; border-radius:18px; background:#11182caa; }
+.cards strong { color:#7186d8; font-size:.8rem; }
+.cards h2 { margin:8px 0; }
+.cards p { color:#99a5c5; margin:0; }
+footer { padding:30px 24px; text-align:center; color:#667396; border-top:1px solid #1b2748; }
+@media (max-width:700px) { .cards { grid-template-columns:1fr; } .hero { margin-top:40px; } }
